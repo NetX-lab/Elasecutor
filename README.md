@@ -4,7 +4,7 @@ Elasecutor is a novel executor scheduler for data analytics systems. It dynamica
 
 ## Prerequisites
 
-Spark 2.1.0, Hadoop 2.6.0, Ubuntu 16.04.2 LTS (Kernel 4.4.0), OpenJDK 7u85, cgroups management tools, psutil
+Spark 2.1.0, Hadoop 2.6.0, Ubuntu 16.04.2 LTS (Kernel 4.4.0), OpenJDK 7u85, cgroups management tools, psutil,
 Scala 2.10.4, Python 3
 
 ## Building Elasecutor
@@ -21,7 +21,7 @@ $ build/mvn -DskipTests clean package
 
 Besides the sheduler module, Elasecutor consists of many components: Monitor Surrogate, Reprovisioning Module, Prediction Module, and Resource Usage Depository (RUD). To make them work, you need to start them manually.
 
-You need to start Monitor Surrogate at each slave server using the following command:
+Start Monitor Surrogate at each slave server using the following command:
 
 ```
 $ python resMon.py
@@ -33,7 +33,7 @@ $ python collect.py
 ```
 The RUD would connect to the Monitor Surrogate to get resource profiles.
 
-Next, start Prediction Module at master servwr, run:
+Next, start Prediction Module at master server, run:
 ```
 $ python predict.py
 ```
