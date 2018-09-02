@@ -2,7 +2,7 @@
 
 Elasecutor is an executor resource scheduler for data analytics systems. It predicts executors’ time-varying resource demands (step 1 in Figure 4), collects workers’ available resources (step 2), assigns executors to machines to minimize fragmentation (steps 3 and 4), elastically allocates resources (step 5), and leverages dynamic reprovisioning for better application QoS (steps 6 and 7).
 
-![Alt text](https://github.com/NetX-lab/Elasecutor/blob/master/documentation/System_Architecture.pdf?raw=true "Elasecutor Architecture")
+![Alt text](https://github.com/NetX-lab/Elasecutor/blob/master/documentation/System_Architecture.png?raw=true "Elasecutor Architecture")
 
 The key components are explained as follows.
 
